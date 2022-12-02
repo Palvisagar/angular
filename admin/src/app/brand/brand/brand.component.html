@@ -1,0 +1,11 @@
+<form [formGroup]="brandForm" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label for="">Brand Name</label>
+        <input type="text" formControlName="brand_name">
+    </div>
+    <div class="form-group">
+        <label for="">Logo</label>
+        <input type="file" (change)="photo($event)" >
+    </div>
+    <button type="submit">Submit</button>
+</form>
