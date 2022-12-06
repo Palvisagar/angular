@@ -1,0 +1,20 @@
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/src/assets/images/category.svg');">
+
+<div clas="container" >
+    <div class="category" style="border: 2px solid black; margin:'20px'; text-align: center; margin-top:'100px';">
+        <h2 class="text-primary">Add Category</h2>
+        <form (ngForm)="categoryForm" autocomplete="off" style="margin:20px;">
+            <div class="form-floating mb-3">
+                <label for="inputtext">Add_Category</label>
+                <input class="form-control" id="inputEmail" type="text" placeholder="" #name name="add_category" [(ngModel)]="categoryForm.add_category" required/>
+               
+            </div>
+           
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                <button class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+
+</div>    
+</section>

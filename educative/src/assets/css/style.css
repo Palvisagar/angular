@@ -3377,3 +3377,8 @@ li.twt {
 	}
 }
 /*--responsive--*/
+
+.image{
+	background-image: url('/src/assets/images/category.svg');
+
+}
