@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../app/layout/layout.component';
 import { AdminComponent } from './admin/admin.component';
 import { ExamComponent } from './admin/exam/exam.component';
+import { GraducationComponent } from './admin/exam/graducation/graducation.component';
+import { IntermediateComponent } from './admin/exam/intermediate/intermediate.component';
+import { PostGraducationComponent } from './admin/exam/post-graducation/post-graducation.component';
 import { NotesComponent } from './admin/notes/notes.component';
 import { QuizQuestionComponent } from './admin/quiz-question/quiz-question.component';
 import { QuizResultComponent } from './admin/quiz-result/quiz-result.component';
@@ -58,6 +61,17 @@ const routes: Routes = [
   },
   {
     path:'exam',component:ExamComponent,
+    children:[
+      {
+        path:'intermediate',component:IntermediateComponent,
+      },
+      {
+        path:'graducation',component:GraducationComponent,
+      },
+      {
+        path:'post-graducation',component:PostGraducationComponent,
+      }
+    ]
    },
   
 

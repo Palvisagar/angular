@@ -22,7 +22,10 @@ import { ViewNotesComponent } from './user/view-notes/view-notes.component';
 import { ViewQuizComponent } from './user/view-quiz/view-quiz.component';
 import { PlayQuizComponent } from './user/play-quiz/play-quiz.component';
 import { ViewResultComponent } from './user/view-result/view-result.component';
-
+import { GraducationComponent } from './admin/exam/graducation/graducation.component';
+import { IntermediateComponent } from './admin/exam/intermediate/intermediate.component';
+import { PostGraducationComponent } from './admin/exam/post-graducation/post-graducation.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,11 +48,14 @@ import { ViewResultComponent } from './user/view-result/view-result.component';
     ViewNotesComponent,
     ViewQuizComponent,
     PlayQuizComponent,
-    ViewResultComponent
+    ViewResultComponent,
+    IntermediateComponent,
+    PostGraducationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
