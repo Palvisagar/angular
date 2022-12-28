@@ -1,0 +1,27 @@
+<section class="hero-wrap ">
+<div class="container" >
+    <div class="category">
+     <h2 class=" text-white text-center pt-4"><b>Add Category</b></h2>
+        <form (ngForm)="categoryForm" autocomplete="off">
+            <div class="row mt-4">
+                <div class="col-md-4 text-white text-center">
+                <label for="inputtext">Add_Category</label>
+
+                </div>
+                <div class="col-md-5">
+
+                <input class="form-control" id="inputEmail" type="text" placeholder="" #name name="add_category"  required/>
+               </div>
+            </div>
+           
+            <div class=" row d-flex align-items-center justify-content-between mt-4 mb-2">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>    
+</section>
